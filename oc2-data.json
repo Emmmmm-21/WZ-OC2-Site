@@ -1,0 +1,643 @@
+{
+  "version": "1.2.9",
+  "authors": [
+    {
+      "folder": "blni——小no v1.3",
+      "key": "blni——小no",
+      "display": "小no",
+      "maps": [
+        {
+          "name": "小no餐馆",
+          "imgFile": "小no餐馆"
+        }
+      ]
+    },
+    {
+      "folder": "ceobekitchen——小刻食堂v0.1",
+      "key": "ceobekitchen——小刻食堂",
+      "display": "小刻食堂",
+      "maps": [
+        {
+          "name": "暴君",
+          "imgFile": "暴君"
+        }
+      ]
+    },
+    {
+      "folder": "choubao——抽宝v0.1",
+      "key": "choubao——抽宝",
+      "display": "抽宝",
+      "maps": [
+        {
+          "name": "抽宝1",
+          "imgFile": "抽宝1"
+        }
+      ]
+    },
+    {
+      "folder": "daxue——胡闹达学 v0.1",
+      "key": "daxue——胡闹达学",
+      "display": "胡闹达学",
+      "maps": [
+        {
+          "name": "达一",
+          "imgFile": "达一"
+        }
+      ]
+    },
+    {
+      "folder": "DTsimple——simple v4.1",
+      "key": "DTsimple——simple",
+      "display": "simple",
+      "maps": [
+        {
+          "name": "simple1",
+          "imgFile": "simple1"
+        },
+        {
+          "name": "simple2",
+          "imgFile": "simple2"
+        },
+        {
+          "name": "simple3",
+          "imgFile": "simple3"
+        },
+        {
+          "name": "simple4",
+          "imgFile": "simple4"
+        }
+      ]
+    },
+    {
+      "folder": "fruit——果果泡泡趴 v2.0",
+      "key": "fruit——果果泡泡趴",
+      "display": "果果泡泡趴",
+      "maps": [
+        {
+          "name": "甜甜小站",
+          "imgFile": "甜甜小站"
+        },
+        {
+          "name": "星火夜话",
+          "imgFile": "星火夜话"
+        }
+      ]
+    },
+    {
+      "folder": "GAODA——胡闹糕中 v1.8.1",
+      "key": "GAODA——胡闹糕中",
+      "display": "胡闹糕中",
+      "maps": [
+        {
+          "name": "糕一（仅限四人）",
+          "imgFile": "糕一（仅限四人）"
+        },
+        {
+          "name": "糕一（单双三人）",
+          "imgFile": "糕一（单双三人）"
+        },
+        {
+          "name": "糕二",
+          "imgFile": "糕二"
+        },
+        {
+          "name": "糕三",
+          "imgFile": "糕三"
+        },
+        {
+          "name": "糕烤",
+          "imgFile": "糕烤"
+        }
+      ]
+    },
+    {
+      "folder": "grand_chefs——举子的晚宴 v0.4",
+      "key": "grand_chefs——举子的晚宴",
+      "display": "举子的晚宴",
+      "maps": [
+        {
+          "name": "第一场晚宴",
+          "imgFile": "第一场晚宴"
+        },
+        {
+          "name": "第二场晚宴",
+          "imgFile": "第二场晚宴"
+        },
+        {
+          "name": "第三场晚宴",
+          "imgFile": "第三场晚宴"
+        },
+        {
+          "name": "第四场晚宴（四人）",
+          "imgFile": "第四场晚宴（四人）",
+          "menuFile": "第四场晚宴"
+        }
+      ]
+    },
+    {
+      "folder": "hhm——胡乱盛宴 v0.162",
+      "key": "hhm——胡乱盛宴",
+      "display": "胡乱盛宴",
+      "maps": [
+        {
+          "name": "街边广场-1",
+          "imgFile": "街边广场-1"
+        },
+        {
+          "name": "雪滑冰原-2",
+          "imgFile": "雪滑冰原-2"
+        },
+        {
+          "name": "清凉一夏-3",
+          "imgFile": "清凉一夏-3"
+        }
+      ]
+    },
+    {
+      "folder": "Jonny——职业鼠鼠 v0.32（3.2.3）",
+      "key": "Jonny——职业鼠鼠",
+      "display": "职业鼠鼠",
+      "maps": [
+        {
+          "name": "风车（四人）",
+          "imgFile": "风车（四人）"
+        },
+        {
+          "name": "风车（1-3人）",
+          "imgFile": "风车（1-3人）"
+        },
+        {
+          "name": "月亮",
+          "imgFile": "月亮"
+        },
+        {
+          "name": "麻烦翻倍（1-4人）",
+          "imgFile": "麻烦翻倍（1-4人）"
+        },
+        {
+          "name": "麻烦翻倍（困难）",
+          "imgFile": "麻烦翻倍（困难）"
+        },
+        {
+          "name": "高峰",
+          "imgFile": "高峰"
+        },
+        {
+          "name": "蹦极",
+          "imgFile": "蹦极"
+        }
+      ]
+    },
+    {
+      "folder": "li——菊花梨 v1.0",
+      "key": "li——菊花梨",
+      "display": "菊花梨",
+      "maps": [
+        {
+          "name": "夏日派对1",
+          "imgFile": "夏日派对1"
+        },
+        {
+          "name": "夏日派对2",
+          "imgFile": "夏日派对2"
+        },
+        {
+          "name": "海滩测试1",
+          "imgFile": "海滩测试1"
+        },
+        {
+          "name": "冬日庆典",
+          "imgFile": "冬日庆典"
+        },
+        {
+          "name": "女巫的毒药",
+          "imgFile": "女巫的毒药"
+        },
+        {
+          "name": "中秋团圆",
+          "imgFile": "中秋团圆"
+        },
+        {
+          "name": "甜品小屋",
+          "imgFile": "甜品小屋"
+        },
+        {
+          "name": "夏日水果烧烤",
+          "imgFile": "夏日水果烧烤"
+        },
+        {
+          "name": "马戏团之旅",
+          "imgFile": "马戏团之旅"
+        },
+        {
+          "name": "洛克王国世界",
+          "imgFile": "洛克王国世界"
+        }
+      ]
+    },
+    {
+      "folder": "littleHa——HaHa餐厅 v0.5",
+      "key": "littleHa——HaHa餐厅",
+      "display": "HaHa餐厅",
+      "maps": [
+        {
+          "name": "0-测试",
+          "imgFile": "0-测试"
+        },
+        {
+          "name": "1-早餐-来杯果汁",
+          "imgFile": "1-早餐-来杯果汁"
+        },
+        {
+          "name": "1-早餐（重置）",
+          "imgFile": "1-早餐（重置）"
+        },
+        {
+          "name": "2-午餐-要冰沙吗",
+          "imgFile": "2-午餐-要冰沙吗"
+        },
+        {
+          "name": "3-晚餐-蒸菜水果派",
+          "imgFile": "3-晚餐-蒸菜水果派"
+        }
+      ]
+    },
+    {
+      "folder": "PatrickLevel——生的派大星 v6.4",
+      "key": "PatrickLevel——生的派大星",
+      "display": "生的派大星",
+      "maps": [
+        {
+          "name": "冬日的慰藉",
+          "imgFile": "冬日的慰藉"
+        },
+        {
+          "name": "马戏团的日料店",
+          "imgFile": "马戏团的日料店"
+        },
+        {
+          "name": "马戏团入口",
+          "imgFile": "马戏团入口"
+        },
+        {
+          "name": "河边野炊",
+          "imgFile": "河边野炊"
+        },
+        {
+          "name": "派大星的假日（白日）",
+          "imgFile": "派大星的假日（白日）"
+        },
+        {
+          "name": "派大星的假日（黑夜）",
+          "imgFile": "派大星的假日（黑夜）"
+        },
+        {
+          "name": "鲨鱼的盛宴（单人/双人）",
+          "imgFile": "鲨鱼的盛宴（单人双人）"
+        },
+        {
+          "name": "鲨鱼的盛宴（三人）",
+          "imgFile": "鲨鱼的盛宴（三人）"
+        },
+        {
+          "name": "鲨鱼的盛宴（四人）",
+          "imgFile": "鲨鱼的盛宴（四人）"
+        }
+      ]
+    },
+    {
+      "folder": "qichi——七池 v0.5.7",
+      "key": "qichi——七池",
+      "display": "七池",
+      "maps": [
+        {
+          "name": "QiChi 1-1",
+          "imgFile": "QiChi 1-1"
+        },
+        {
+          "name": "QiChi 1-2（2人）",
+          "imgFile": "QiChi 1-2（2人）"
+        },
+        {
+          "name": "QiChi 1-2（4人）",
+          "imgFile": "QiChi 1-2（4人）"
+        },
+        {
+          "name": "QiChi 1-3 七池的海岸线派对",
+          "imgFile": "QiChi 1-3 七池的海岸线派对"
+        },
+        {
+          "name": "QiChi 1-4 露营地",
+          "imgFile": "QiChi 1-4 露营地"
+        }
+      ]
+    },
+    {
+      "folder": "qie——切切 v0.1",
+      "key": "qie——切切",
+      "display": "切切",
+      "maps": [
+        {
+          "name": "海陆小馆",
+          "imgFile": "海陆小馆"
+        }
+      ]
+    },
+    {
+      "folder": "rw——RW v0.54",
+      "key": "rw——RW",
+      "display": "RW",
+      "maps": [
+        {
+          "name": "漂流",
+          "imgFile": "漂流"
+        },
+        {
+          "name": "倒带",
+          "imgFile": "倒带"
+        },
+        {
+          "name": "转盘",
+          "imgFile": "转盘"
+        },
+        {
+          "name": "Arctic Grill（rw_4）",
+          "imgFile": "Arctic Grill（rw_4）"
+        },
+        {
+          "name": "Breeze & Treats（rw_5）",
+          "imgFile": "Breeze & Treats（rw_5）"
+        },
+        {
+          "name": "rw_6",
+          "imgFile": "rw_6"
+        }
+      ]
+    },
+    {
+      "folder": "SHZjun——霍格华芙 v0.31",
+      "key": "SHZjun——霍格华芙",
+      "display": "霍格华芙",
+      "maps": [
+        {
+          "name": "霍格华芙-1",
+          "imgFile": "霍格华芙-1"
+        },
+        {
+          "name": "霍格华芙-2（10周年）",
+          "imgFile": "霍格华芙-2（10周年）"
+        },
+        {
+          "name": "霍格华芙-3",
+          "imgFile": "霍格华芙-3"
+        }
+      ]
+    },
+    {
+      "folder": "test_level——测试 v0.5.1",
+      "key": "test_level——测试",
+      "display": "测试",
+      "maps": [
+        {
+          "name": "测试1",
+          "imgFile": "测试1"
+        },
+        {
+          "name": "测试2",
+          "imgFile": "测试2"
+        },
+        {
+          "name": "测试3",
+          "imgFile": "测试3"
+        },
+        {
+          "name": "测试4",
+          "imgFile": "测试4"
+        },
+        {
+          "name": "测试5",
+          "imgFile": "测试5"
+        }
+      ]
+    },
+    {
+      "folder": "WenR——小闻食光 v0.5.2",
+      "key": "WenR——小闻食光",
+      "display": "小闻食光",
+      "maps": [
+        {
+          "name": "灶游录·壹·本味",
+          "imgFile": "灶游录·壹·本味"
+        },
+        {
+          "name": "灶游录·贰·上卷·清风",
+          "imgFile": "灶游录·贰·上卷·清风"
+        },
+        {
+          "name": "灶游录·贰·下卷·炽风",
+          "imgFile": "灶游录·贰·下卷·炽风"
+        },
+        {
+          "name": "灶游录·叁·同舟涉川",
+          "imgFile": "灶游录·叁·同舟涉川"
+        },
+        {
+          "name": "炭火谣·壹·交渡",
+          "imgFile": "炭火谣·壹·交渡"
+        }
+      ]
+    },
+    {
+      "folder": "yl——夜凉作坊v0.1",
+      "key": "yl——夜凉作坊",
+      "display": "夜凉作坊",
+      "maps": [
+        {
+          "name": "夜凉作坊1",
+          "imgFile": "夜凉作坊1"
+        }
+      ]
+    }
+  ],
+  "mapFile": {
+    "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/levels.zip",
+    "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/levels.zip",
+    "baidu": "https://pan.baidu.com/netdisk/share?surl=b8Cbw39JxKOx0vtBlhjh4w&pwd=oc2m",
+    "log": [
+      {
+        "date": "2026.08.28",
+        "note": "地图更新（2026.08.28 上传）\n1. 新增「抽宝」系列，《抽宝1》地图\n2. 「HaHa餐厅」系列《1-早餐-来杯果汁》地图去除洗碗池，改用水枪；新增《1-早餐（重置）》地图"
+      },
+      {
+        "date": "2026.08.27（二）",
+        "note": "地图更新（2026.08.27 二次上传）\n1. 「职业鼠鼠」系列《蹦极》地图细节调整，四星分数修改\n2. 「小闻食光」系列新增《炭火谣·壹·交渡》地图"
+      },
+      {
+        "date": "2026.08.27",
+        "note": "地图更新（2026.08.27 上传）\n1. 「七池」「霍格华芙」系列地图 bug 修复\n2. DTsimple 更新：新增地图《simple4》\n3. 新增「小刻食堂」「夜凉作坊」系列：「小刻食堂」《暴君》、「夜凉作坊」《夜凉作坊1》"
+      },
+      {
+        "date": "2026.08.18",
+        "note": "jonny的\"职业鼠鼠\"系列地图中蹦极地图更新，新增两个平底锅"
+      },
+      {
+        "date": "2026.08.15",
+        "note": "1. littleHa更新至0.5，所有地图名称修改，新增2张地图，分别是《2-午餐-要冰沙吗》《3-晚餐-蒸菜水果派》\n2. 原GAODA系列地图，正式分为\"胡闹糕中\"\"胡闹达学\"两个系列 原GAODA系列中的地图为现在\"胡闹糕中\"系列中的《糕一》新增\"胡闹糕中\"系列《糕二》《糕三》《糕烤》\"胡闹达学\"系列《达一》\n3. 原\"WenR\"系列地图现在正式更名为\"小闻食光\"，原《burger0》地图修改为现在的《灶游录·壹·本味》，新增《灶游录·贰·上卷·清风》《灶游录·贰·下卷·炽风》《灶游录·叁·同舟涉川》三张地图"
+      }
+    ]
+  },
+  "modsZip": {
+    "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/mods.zip",
+    "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/mods.zip",
+    "baidu": "https://pan.baidu.com/netdisk/share?surl=-kXmMtMcxdZXVTvuMiJCkQ&pwd=oc2m"
+  },
+  "mods": [
+    {
+      "zh": "BepInEx框架（必装）",
+      "pin": 1,
+      "file": "BepInEx.zip",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/BepInEx.zip",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/BepInEx.zip",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=7NrJ3INt2QZn4XCqyly0Lw&pwd=oc2m"
+    },
+    {
+      "zh": "街机MOD",
+      "file": "OC2HostUtilities-v1.8.0.zip",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2HostUtilities-v1.8.0.zip",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2HostUtilities-v1.8.0.zip",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=_q3BLE9sOCB0rOAPqWOkGQ&pwd=oc2m"
+    },
+    {
+      "zh": "躺下趴下旋转",
+      "file": "OC2ChefRotation-v1.1.3.zip",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2ChefRotation-v1.1.3.zip",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2ChefRotation-v1.1.3.zip",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=McewTDZ2mXSr-npGoDyHsA&pwd=oc2m"
+    },
+    {
+      "zh": "海滩的一天",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2BeachOneday.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2BeachOneday.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=BUdUy4ncJScdYQVUpYxoKQ&pwd=oc2m"
+    },
+    {
+      "zh": "灭火器清洗",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2ExtinguisherWash.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2ExtinguisherWash.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=FVRnCdDAhJNbN-LjVzGA-Q&pwd=oc2m"
+    },
+    {
+      "zh": "喷气背包",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2Jetpack.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2Jetpack.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=F6PZioTsFmxIWMTJiSmUkA&pwd=oc2m"
+    },
+    {
+      "zh": "更多食谱",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2ManyRecipes.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2ManyRecipes.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=fDoEIjo6bmpuFkYaO-z0SA&pwd=oc2m"
+    },
+    {
+      "zh": "黑夜模式",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2NightMode.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2NightMode.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=SuKeamGaqKKoUo7kf0heNg&pwd=oc2m"
+    },
+    {
+      "zh": "随机位置",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2RandomColor.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2RandomColor.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=8G3AYU8sK70YJYranQRVPg&pwd=oc2m"
+    },
+    {
+      "zh": "随机大小",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2RandomSize.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2RandomSize.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=BhWUBWuef5x2ctvPnI90KA&pwd=oc2m"
+    },
+    {
+      "zh": "随机食材",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2Randomizer.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2Randomizer.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=JHrbRBWoqsyRr-9iCGgamw&pwd=oc2m"
+    },
+    {
+      "zh": "切菜速度",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2SoloCooking.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2SoloCooking.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=roGZc5k2WPnPOuwTYIYiTg&pwd=oc2m"
+    },
+    {
+      "zh": "隐身厨师",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2StealthChef.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2StealthChef.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=r8iagLUFcKSdX6js1UUzVA&pwd=oc2m"
+    },
+    {
+      "zh": "投掷达人投掷人",
+      "tc": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-mods/OC2ThrowAny.dll",
+      "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/OC2ThrowAny.dll",
+      "baidu": "https://pan.baidu.com/netdisk/share?surl=DYmGBvVm1KmDtDX7X2yFLA&pwd=oc2m"
+    }
+  ],
+  "changelog": [
+    {
+      "v": "v1.1.1",
+      "date": "2026.08.27",
+      "note": "1. 更新模块按钮整体美化：配色基于暖色系（参考 4.jpg），常规按钮改为奶米色，危险按钮改为暖橙米；保留新增地图按钮的绿色。\n2. 每行 3 个按钮改为等宽布局（flex:1 1 0），由最长文字一项决定宽度，杜绝溢出。\n3. 新增地图按钮的 🆕 emoji 替换为内联 SVG 图标（地图标记+加号）。\n4. 新增 SEED.changelog 字段：专供『设置 → 更新日志』展示 app 自身升级记录；厨房文件下载的『地图文件更新日志』由 mapFile.log 单独承载，两者职责分离。"
+    },
+    {
+      "v": "v1.2.0",
+      "date": "2026.08.27",
+      "note": "1. 菜单图片同步：22 张菜单图内嵌为 MENU_B64（覆盖举子的晚宴 4 张、胡乱盛宴 2 张、菊花梨 6 张、生的派大星 7 张、七池 1 张、RW 2 张），菜单图经压缩优化（JPEG q85 / max 1920px）。\n2. 首页标题配色优化：『今天你胡闹了吗』『简直胡闹！！！』文字由红色 #C75B5B 改为深棕色 #7E3621，阴影改为柔和浅色，保留阴影偏移效果，减轻视觉疲劳。\n3. 无菜单的地图在弹窗与随机选图页均显示『暂无菜单』。"
+    },
+    {
+      "v": "v1.2.1",
+      "date": "2026.08.27",
+      "note": "1. 导出与备份模块布局改版：原 5 张松散卡片改为两列卡片布局（参考工作台设计）——左卡「图片导出」，右卡「数据备份与恢复」内部左右两栏（左栏全量操作：导出/导入 JSON；右栏危险操作：重置/清空，带警示底色）。\n2. 按钮改为居中紧凑样式（统一最小宽度，纵向堆叠，不再全宽拉伸），按钮组在面板内垂直居中。\n3. 移除导出与备份页面的撤回按钮（undoLast 功能保留在更新模块中）。所有按钮的 onclick 功能不变。"
+    },
+    {
+      "v": "v1.2.2",
+      "date": "2026.08.28",
+      "note": "1. 修复随机抽取卡住 bug：抽取到只有菜单图、没有地图图的地图时，旧代码会把图片元素从页面中销毁，导致下一次抽取报错卡死；现改为切换显示「暂无图片」占位，抽取始终可继续。\n2. 随机抽取改为 5 轮内不重复（地图总数不足 6 张时不约束）。\n3. 随机结果布局改版：网页版左右分栏——左侧地图图、右侧菜单图（完整展示、不裁剪、不溢出）；手机端上下排列，菜单图同样完整展示。点击放大等原有功能不变。"
+    },
+    {
+      "v": "v1.2.3",
+      "date": "2026.08.28",
+      "note": "1. 首页标题『今天你胡闹了吗』字号放大（34px → 46px），配色继续改用 4.jpg 提取的浅色系：主色杏橙 #E8A088、深棕粗阴影 #5C2A1B，清晰可读。\n2. 抽取结果地图名与作者移到图片上方（之前在下方），字号 22px → 26px 并居中。"
+    },
+    {
+      "v": "v1.2.4",
+      "date": "2026.08.28",
+      "note": "1. Mod 下载更新：新增「BepInEx框架（必装）」并置顶于列表最上方，其后为「全部 Mod 打包 mods.zip」，再往下为各款 Mod；新增「街机MOD v1.8.0」「躺下趴下旋转 v1.1.3」两款 Mod，移除「主机换位」。\n2. 全部 Mod 打包 mods.zip 同步更新：移除主机换位，内嵌街机MOD与躺下趴下旋转两个原始压缩包（11 个 Mod dll + 2 个 zip）。\n3. 三种下载方式（腾讯云 / GitHub / 百度网盘）链接同步更新，其中 mods.zip 的百度网盘链接已更换为新版文件。"
+    },
+    {
+      "v": "v1.2.5",
+      "date": "2026.08.28",
+      "note": "首页标题『今天你胡闹了吗』应用新样式（贴纸字）：字体改回朱柿色 #C75B5B，外加白色粗描边（贴纸质感）与明黄色硬投影 #F4D03F，配色取自工作台主题色板，对比醒目。"
+    },
+    {
+      "v": "v1.2.6",
+      "date": "2026.08.28",
+      "note": "新增云端数据同步：页面打开时自动拉取云端 oc2-data.json（5 秒超时，失败自动回退内嵌数据，离线不受影响）。系列/地图结构、下载链接、更新日志与图片增量以云端为准；浏览器内的自定义数据（替换图、自定义链接、自写日志）仍最高优先。检测到云端新版本时右下角提示。今后内容更新只需替换云端 json，无需重新部署整页。"
+    },
+    {
+      "v": "v1.2.7",
+      "date": "2026.08.28",
+      "note": "加载性能优化：全部 98 张图片（76 张地图图 + 22 张菜单图）从页面内嵌 base64 迁移为云端图片链接。页面体积从 67MB 降至约 300KB，打开速度大幅提升；图片按需加载（查看时才下载），浏览器缓存后二次访问更快。断网时页面功能可用但图片不显示。"
+    },
+    {
+      "v": "v1.2.8",
+      "date": "2026.08.28",
+      "note": "1. 新增「抽宝」系列，《抽宝1》地图（系列顺序调整为与地图合集一致）\n2.「HaHa餐厅」系列《1-早餐-来杯果汁》地图更新（去除洗碗池，改用水枪）\n3.「HaHa餐厅」系列新增《1-早餐（重置）》地图\n4. 地图包 levels.zip 更新至 2026.08.28 版本\n5. 全部 Mod 打包 mods.zip 结构优化：街机 MOD、厨师躺下趴下旋转改为解压后的文件夹"
+    },
+    {
+      "v": "v1.2.9",
+      "date": "2026.08.28",
+      "note": "优化云端数据加载方式：改用相对路径读取同站点数据文件，避免跨域限制，提升在不同托管平台上的兼容性\n（本次为内部优化，页面内容与功能均无变化）"
+    }
+  ],
+  "imgOverrides": {},
+  "menuOverrides": {}
+}
