@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com" crossorigin>
 <title>简直胡闹！！！ - 胡闹厨房2 信息速查</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
@@ -633,7 +634,7 @@ input.in.err,select.in.err,textarea.in.err{border-color:#E53935;background:#FFEB
 <script>
 
 const SEED = {
-    "version": "1.2.9",
+    "version": "1.2.11",
     "authors": [
       {
         "folder": "blni——小no v1.3",
@@ -669,13 +670,17 @@ const SEED = {
         ]
       },
       {
-        "folder": "daxue——胡闹达学 v0.1",
+        "folder": "daxue——胡闹达学 v0.2.4",
         "key": "daxue——胡闹达学",
         "display": "胡闹达学",
         "maps": [
           {
             "name": "达一",
             "imgFile": "达一"
+          },
+          {
+            "name": "达二",
+            "imgFile": "达二"
           }
         ]
       },
@@ -1082,13 +1087,24 @@ const SEED = {
         ]
       },
       {
-        "folder": "yl——夜凉作坊v0.1",
+        "folder": "yl——夜凉作坊 v0.1",
         "key": "yl——夜凉作坊",
         "display": "夜凉作坊",
         "maps": [
           {
             "name": "夜凉作坊1",
             "imgFile": "夜凉作坊1"
+          }
+        ]
+      },
+      {
+        "folder": "呆喵喵小厨房 v0.1.1",
+        "key": "呆喵喵小厨房",
+        "display": "呆喵喵小厨房",
+        "maps": [
+          {
+            "name": "来点汉堡吗",
+            "imgFile": "来点汉堡吗"
           }
         ]
       }
@@ -1098,6 +1114,10 @@ const SEED = {
       "github": "https://github.com/Emmmmm-21/WZ-OC2/releases/download/v1.0/levels.zip",
       "baidu": "https://pan.baidu.com/netdisk/share?surl=b8Cbw39JxKOx0vtBlhjh4w&pwd=oc2m",
       "log": [
+        {
+          "date": "2026.08.28（三）",
+          "note": "地图更新（2026.08.28 三次上传）\n1. 新增「呆喵喵小厨房」系列，《来点汉堡吗》地图\n2. 「胡闹达学」系列新增《达二》地图"
+        },
         {
           "date": "2026.08.28",
           "note": "地图更新（2026.08.28 上传）\n1. 新增「抽宝」系列，《抽宝1》地图\n2. 「HaHa餐厅」系列《1-早餐-来杯果汁》地图去除洗碗池，改用水枪；新增《1-早餐（重置）》地图"
@@ -1272,6 +1292,16 @@ const SEED = {
       "v": "v1.2.9",
       "date": "2026.08.28",
       "note": "优化云端数据加载方式：改用相对路径读取同站点数据文件，避免跨域限制，提升在不同托管平台上的兼容性\n（本次为内部优化，页面内容与功能均无变化）"
+    },
+    {
+      "v": "v1.2.10",
+      "date": "2026.08.28",
+      "note": "图片加载优化（画质不变）：\\n1. 全部地图图与菜单图转为渐进式格式，加载时先显示模糊轮廓再逐步清晰，慢速网络下不再长时间白屏\\n2. 加入图片服务器预连接，减少每次加载图片的握手耗时\\n3. 重新优化编码，图片总量由 49.0MB 降至 46.6MB，画质保持不变"
+    },
+    {
+      "v": "v1.2.11",
+      "date": "2026.08.28",
+      "note": "1. 新增「呆喵喵小厨房」系列，《来点汉堡吗》地图\n2. 「胡闹达学」系列新增《达二》地图\n3. 地图包 levels.zip 更新至 2026.08.28 版本"
     }
     ]
   };
@@ -1347,109 +1377,111 @@ async function syncCloudData(){
 }
 let updData = null;
 const IMG_B64 = {
-  "blni——小no/小no餐馆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i001.jpg",
-  "daxue——胡闹达学/达一": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i002.jpg",
-  "DTsimple——simple/simple1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i003.jpg",
-  "DTsimple——simple/simple2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i004.jpg",
-  "DTsimple——simple/simple3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i005.jpg",
-  "DTsimple——simple/simple4": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i006.jpg",
-  "fruit——果果泡泡趴/甜甜小站": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i007.jpg",
-  "fruit——果果泡泡趴/星火夜话": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i008.jpg",
-  "GAODA——胡闹糕中/糕一（仅限四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i009.jpg",
-  "GAODA——胡闹糕中/糕一（单双三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i010.jpg",
-  "GAODA——胡闹糕中/糕二": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i011.jpg",
-  "GAODA——胡闹糕中/糕三": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i012.jpg",
-  "GAODA——胡闹糕中/糕烤": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i013.jpg",
-  "grand_chefs——举子的晚宴/第一场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i014.jpg",
-  "grand_chefs——举子的晚宴/第二场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i015.jpg",
-  "grand_chefs——举子的晚宴/第三场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i016.jpg",
-  "hhm——胡乱盛宴/街边广场-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i017.jpg",
-  "hhm——胡乱盛宴/雪滑冰原-2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i018.jpg",
-  "hhm——胡乱盛宴/清凉一夏-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i019.jpg",
-  "Jonny——职业鼠鼠/风车（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i020.jpg",
-  "Jonny——职业鼠鼠/风车（1-3人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i021.jpg",
-  "Jonny——职业鼠鼠/月亮": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i022.jpg",
-  "Jonny——职业鼠鼠/麻烦翻倍（1-4人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i023.jpg",
-  "Jonny——职业鼠鼠/麻烦翻倍（困难）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i024.jpg",
-  "Jonny——职业鼠鼠/高峰": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i025.jpg",
-  "Jonny——职业鼠鼠/蹦极": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i026.jpg",
-  "li——菊花梨/夏日派对1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i027.jpg",
-  "li——菊花梨/夏日派对2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i028.jpg",
-  "li——菊花梨/海滩测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i029.jpg",
-  "li——菊花梨/冬日庆典": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i030.jpg",
-  "li——菊花梨/女巫的毒药": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i031.jpg",
-  "li——菊花梨/中秋团圆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i032.jpg",
-  "li——菊花梨/甜品小屋": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i033.jpg",
-  "li——菊花梨/夏日水果烧烤": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i034.jpg",
-  "li——菊花梨/马戏团之旅": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i035.jpg",
-  "li——菊花梨/洛克王国世界": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i036.jpg",
-  "littleHa——HaHa餐厅/0-测试": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i037.jpg",
-  "littleHa——HaHa餐厅/1-早餐-来杯果汁": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i079.jpg",
-  "littleHa——HaHa餐厅/2-午餐-要冰沙吗": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i039.jpg",
-  "littleHa——HaHa餐厅/3-晚餐-蒸菜水果派": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i040.jpg",
-  "PatrickLevel——生的派大星/冬日的慰藉": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i041.jpg",
-  "PatrickLevel——生的派大星/马戏团的日料店": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i042.jpg",
-  "PatrickLevel——生的派大星/马戏团入口": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i043.jpg",
-  "PatrickLevel——生的派大星/河边野炊": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i044.jpg",
-  "PatrickLevel——生的派大星/派大星的假日（白日）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i045.jpg",
-  "PatrickLevel——生的派大星/派大星的假日（黑夜）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i046.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i047.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i048.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（单人双人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i049.jpg",
-  "qichi——七池/QiChi 1-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i050.jpg",
-  "qichi——七池/QiChi 1-2（2人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i051.jpg",
-  "qichi——七池/QiChi 1-2（4人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i052.jpg",
-  "qichi——七池/QiChi 1-3 七池的海岸线派对": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i053.jpg",
-  "qichi——七池/QiChi 1-4 露营地": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i054.jpg",
-  "qie——切切/海陆小馆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i055.jpg",
-  "rw——RW/漂流": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i056.jpg",
-  "rw——RW/倒带": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i057.jpg",
-  "rw——RW/转盘": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i058.jpg",
-  "rw——RW/Arctic Grill（rw_4）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i059.jpg",
-  "rw——RW/Breeze & Treats（rw_5）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i060.jpg",
-  "rw——RW/rw_6": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i061.jpg",
-  "SHZjun——霍格华芙/霍格华芙-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i062.jpg",
-  "SHZjun——霍格华芙/霍格华芙-2（10周年）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i063.jpg",
-  "SHZjun——霍格华芙/霍格华芙-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i064.jpg",
-  "test_level——测试/测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i065.jpg",
-  "test_level——测试/测试2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i066.jpg",
-  "test_level——测试/测试3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i067.jpg",
-  "test_level——测试/测试4": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i068.jpg",
-  "test_level——测试/测试5": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i069.jpg",
-  "WenR——小闻食光/灶游录·叁·同舟涉川": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i070.jpg",
-  "WenR——小闻食光/炭火谣·壹·交渡": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i071.jpg",
-  "WenR——小闻食光/灶游录·壹·本味": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i072.jpg",
-  "WenR——小闻食光/灶游录·贰·上卷·清风": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i073.jpg",
-  "WenR——小闻食光/灶游录·贰·下卷·炽风": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i074.jpg",
-  "ceobekitchen——小刻食堂/暴君": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i075.jpg",
-  "yl——夜凉作坊/夜凉作坊1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i076.jpg",
-  "choubao——抽宝/抽宝1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i077.jpg",
-  "littleHa——HaHa餐厅/1-早餐（重置）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i078.jpg"
+  "blni——小no/小no餐馆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i201.jpg",
+  "daxue——胡闹达学/达一": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i202.jpg",
+  "DTsimple——simple/simple1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i203.jpg",
+  "DTsimple——simple/simple2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i204.jpg",
+  "DTsimple——simple/simple3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i205.jpg",
+  "DTsimple——simple/simple4": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i206.jpg",
+  "fruit——果果泡泡趴/甜甜小站": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i207.jpg",
+  "fruit——果果泡泡趴/星火夜话": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i208.jpg",
+  "GAODA——胡闹糕中/糕一（仅限四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i209.jpg",
+  "GAODA——胡闹糕中/糕一（单双三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i210.jpg",
+  "GAODA——胡闹糕中/糕二": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i211.jpg",
+  "GAODA——胡闹糕中/糕三": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i212.jpg",
+  "GAODA——胡闹糕中/糕烤": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i213.jpg",
+  "grand_chefs——举子的晚宴/第一场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i214.jpg",
+  "grand_chefs——举子的晚宴/第二场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i215.jpg",
+  "grand_chefs——举子的晚宴/第三场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i216.jpg",
+  "hhm——胡乱盛宴/街边广场-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i217.jpg",
+  "hhm——胡乱盛宴/雪滑冰原-2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i218.jpg",
+  "hhm——胡乱盛宴/清凉一夏-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i219.jpg",
+  "Jonny——职业鼠鼠/风车（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i220.jpg",
+  "Jonny——职业鼠鼠/风车（1-3人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i221.jpg",
+  "Jonny——职业鼠鼠/月亮": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i222.jpg",
+  "Jonny——职业鼠鼠/麻烦翻倍（1-4人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i223.jpg",
+  "Jonny——职业鼠鼠/麻烦翻倍（困难）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i224.jpg",
+  "Jonny——职业鼠鼠/高峰": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i225.jpg",
+  "Jonny——职业鼠鼠/蹦极": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i226.jpg",
+  "li——菊花梨/夏日派对1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i227.jpg",
+  "li——菊花梨/夏日派对2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i228.jpg",
+  "li——菊花梨/海滩测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i229.jpg",
+  "li——菊花梨/冬日庆典": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i230.jpg",
+  "li——菊花梨/女巫的毒药": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i231.jpg",
+  "li——菊花梨/中秋团圆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i232.jpg",
+  "li——菊花梨/甜品小屋": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i233.jpg",
+  "li——菊花梨/夏日水果烧烤": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i234.jpg",
+  "li——菊花梨/马戏团之旅": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i235.jpg",
+  "li——菊花梨/洛克王国世界": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i236.jpg",
+  "littleHa——HaHa餐厅/0-测试": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i237.jpg",
+  "littleHa——HaHa餐厅/1-早餐-来杯果汁": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i238.jpg",
+  "littleHa——HaHa餐厅/2-午餐-要冰沙吗": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i239.jpg",
+  "littleHa——HaHa餐厅/3-晚餐-蒸菜水果派": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i240.jpg",
+  "PatrickLevel——生的派大星/冬日的慰藉": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i241.jpg",
+  "PatrickLevel——生的派大星/马戏团的日料店": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i242.jpg",
+  "PatrickLevel——生的派大星/马戏团入口": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i243.jpg",
+  "PatrickLevel——生的派大星/河边野炊": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i244.jpg",
+  "PatrickLevel——生的派大星/派大星的假日（白日）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i245.jpg",
+  "PatrickLevel——生的派大星/派大星的假日（黑夜）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i246.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i247.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i248.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（单人双人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i249.jpg",
+  "qichi——七池/QiChi 1-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i250.jpg",
+  "qichi——七池/QiChi 1-2（2人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i251.jpg",
+  "qichi——七池/QiChi 1-2（4人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i252.jpg",
+  "qichi——七池/QiChi 1-3 七池的海岸线派对": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i253.jpg",
+  "qichi——七池/QiChi 1-4 露营地": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i254.jpg",
+  "qie——切切/海陆小馆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i255.jpg",
+  "rw——RW/漂流": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i256.jpg",
+  "rw——RW/倒带": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i257.jpg",
+  "rw——RW/转盘": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i258.jpg",
+  "rw——RW/Arctic Grill（rw_4）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i259.jpg",
+  "rw——RW/Breeze & Treats（rw_5）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i260.jpg",
+  "rw——RW/rw_6": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i261.jpg",
+  "SHZjun——霍格华芙/霍格华芙-1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i262.jpg",
+  "SHZjun——霍格华芙/霍格华芙-2（10周年）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i263.jpg",
+  "SHZjun——霍格华芙/霍格华芙-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i264.jpg",
+  "test_level——测试/测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i265.jpg",
+  "test_level——测试/测试2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i266.jpg",
+  "test_level——测试/测试3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i267.jpg",
+  "test_level——测试/测试4": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i268.jpg",
+  "test_level——测试/测试5": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i269.jpg",
+  "WenR——小闻食光/灶游录·叁·同舟涉川": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i270.jpg",
+  "WenR——小闻食光/炭火谣·壹·交渡": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i271.jpg",
+  "WenR——小闻食光/灶游录·壹·本味": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i272.jpg",
+  "WenR——小闻食光/灶游录·贰·上卷·清风": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i273.jpg",
+  "WenR——小闻食光/灶游录·贰·下卷·炽风": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i274.jpg",
+  "ceobekitchen——小刻食堂/暴君": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i275.jpg",
+  "yl——夜凉作坊/夜凉作坊1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i276.jpg",
+  "choubao——抽宝/抽宝1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i277.jpg",
+  "littleHa——HaHa餐厅/1-早餐（重置）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i278.jpg",
+  "daxue——胡闹达学/达二": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i279.jpg",
+  "呆喵喵小厨房/来点汉堡吗": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/i280.jpg"
 }; // 全部地图图已内嵌为 base64，无需任何外部素材文件夹
 
 const MENU_B64 = {
-  "PatrickLevel——生的派大星/河边野炊": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m001.jpg",
-  "PatrickLevel——生的派大星/派大星的假日（白日）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m002.jpg",
-  "PatrickLevel——生的派大星/派大星的假日（黑夜）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m003.jpg",
-  "PatrickLevel——生的派大星/马戏团的日料店": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m004.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m005.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（单人双人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m006.jpg",
-  "PatrickLevel——生的派大星/鲨鱼的盛宴（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m007.jpg",
-  "grand_chefs——举子的晚宴/第一场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m008.jpg",
-  "grand_chefs——举子的晚宴/第三场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m009.jpg",
-  "grand_chefs——举子的晚宴/第二场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m010.jpg",
-  "grand_chefs——举子的晚宴/第四场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m011.jpg",
-  "hhm——胡乱盛宴/清凉一夏-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m012.jpg",
-  "hhm——胡乱盛宴/雪滑冰原-2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m013.jpg",
-  "li——菊花梨/中秋团圆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m014.jpg",
-  "li——菊花梨/冬日庆典": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m015.jpg",
-  "li——菊花梨/夏日派对1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m016.jpg",
-  "li——菊花梨/夏日派对2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m017.jpg",
-  "li——菊花梨/女巫的毒药": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m018.jpg",
-  "li——菊花梨/海滩测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m019.jpg",
-  "qichi——七池/QiChi 1-4 露营地": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m020.jpg",
-  "rw——RW/Breeze & Treats（rw_5）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m021.jpg",
-  "rw——RW/rw_6": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m022.jpg"
+  "PatrickLevel——生的派大星/河边野炊": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m201.jpg",
+  "PatrickLevel——生的派大星/派大星的假日（白日）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m202.jpg",
+  "PatrickLevel——生的派大星/派大星的假日（黑夜）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m203.jpg",
+  "PatrickLevel——生的派大星/马戏团的日料店": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m204.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（三人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m205.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（单人双人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m206.jpg",
+  "PatrickLevel——生的派大星/鲨鱼的盛宴（四人）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m207.jpg",
+  "grand_chefs——举子的晚宴/第一场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m208.jpg",
+  "grand_chefs——举子的晚宴/第三场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m209.jpg",
+  "grand_chefs——举子的晚宴/第二场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m210.jpg",
+  "grand_chefs——举子的晚宴/第四场晚宴": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m211.jpg",
+  "hhm——胡乱盛宴/清凉一夏-3": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m212.jpg",
+  "hhm——胡乱盛宴/雪滑冰原-2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m213.jpg",
+  "li——菊花梨/中秋团圆": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m214.jpg",
+  "li——菊花梨/冬日庆典": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m215.jpg",
+  "li——菊花梨/夏日派对1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m216.jpg",
+  "li——菊花梨/夏日派对2": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m217.jpg",
+  "li——菊花梨/女巫的毒药": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m218.jpg",
+  "li——菊花梨/海滩测试1": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m219.jpg",
+  "qichi——七池/QiChi 1-4 露营地": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m220.jpg",
+  "rw——RW/Breeze & Treats（rw_5）": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m221.jpg",
+  "rw——RW/rw_6": "https://xiaoxu-d1gwiiznk29f00a16-1464753993.tcloudbaseapp.com/oc2-img/m222.jpg"
 };
 
 /* ============ 数据层 ============ */
